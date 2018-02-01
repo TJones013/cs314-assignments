@@ -1,0 +1,403 @@
+<!--Taylor Jones-->
+<!--HW1-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="index_style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+  </head>
+  <body>
+	
+	<!--List container drop down menu-->
+	<div class="container">
+	<header>
+		<h1>Summer Bod 2018</h1>
+	</header>
+	  <div>
+		  <p>Summer is just around the corner. Are you tired of looking like this</p>
+		  <button onclick= buttonAction('before')>Show Image</button>
+		  <img id="before" src="http://i.dailymail.co.uk/i/pix/2015/06/05/04/295E07F700000578-3111744-image-a-24_1433474962486.jpg" width="300" height="450" style="display:none;">
+		  <p> and want to look like this!</p>
+		  <button onclick= buttonAction('after')>Show Image</button>
+		  <img id="after" src="http://static5.businessinsider.com/image/51db02f3eab8ea8e3f00000a-605-607/screen%20shot%202013-07-08%20at%202.19.44%20pm.png" width="300" height="300" style="display:none;">
+		  <p> If you answered yes, then following this guide can get you there in no time. All that is needed is some hard work and dedication. Here are a few recipes that I personally enjoy and a relatively simple workout guide.
+	  </div>
+	  <!--Recipe Section-->
+	  <div class="panel-group">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h4 class="panel-title">
+			  <a data-toggle="collapse" href="#recipe_list">Favorite Healthy Recipes</a>
+			</h4>
+		  </div>
+		  <div id="recipe_list" class="panel-collapse collapse">
+			<ul class="list-group">
+			  <li class="list-group-item">
+				<h2>Buffalo Chicken Wrap</h2>
+					<a href="http://www.eatingwell.com/recipe/253078/buffalo-chicken-wrap/">
+						<img src="http://images.media-allrecipes.com/userphotos/960x960/3755836.jpg" width="400" height = "400">
+					</a>
+				<h2>Instructions:</h2>
+				<ol>
+					<li>Take chicken breast and slice into even slices.</li>
+					<li>Heat a non-stick pan to medium-high heat. Add chicken and cook until inside is not longer pink (about 4-5 minutes). Coat finished chicken in hot sauce of choice.</li>
+					<li>Take a wheat tortilla or flat bread and add a tablespoon of blue cheese. Then top with chicken, some lettuce or spinach, and diced tomatoes.</li>
+					<li>Serve plain or with celery and/or carrots.</li>
+				</ol>
+			  </li>
+			  <li class="list-group-item">
+				<h2>Grilled Teryaki Salmon</h2>
+					<a href="http://allrecipes.com/recipe/12720/grilled-salmon-i/">
+						<img src="http://images.media-allrecipes.com/userphotos/720x405/800839.jpg" width="500" height = "400">
+					</a>
+				<h2>Instructions:</h2>
+				<ol>
+					<li>Slice salmon into single serving sizes (about 4oz pieces). Marinate these in teryaki sauce for at least 2 hours.</li>
+					<li>Heat grill to medium heat and let warm before putting on salmon. Cook the salmon on each side until fish is flaky (about 5 minutes per side). If salmon has skin, cook the skin side at high heat for an additional minute to get crispy skin.</li>
+					<li>Serve with rice and a spinach salad.</li>
+				</ol>
+			  </li>
+			  <li class="list-group-item">
+				<h2>Turkey Meatloaf</h2>
+					<a href="http://www.foodnetwork.com/recipes/ina-garten/turkey-meatloaf-recipe-1940896">
+						<img src="http://www.inspiredtaste.net/wp-content/uploads/2016/06/Turkey-Meatloaf-Recipe-1200.jpg" width="400" height = "400">
+					</a>
+				<h2>Instructions:</h2>
+				<ol>
+					<li>In a large bowl, mix 2lbs of ground turkey with an egg, about half a cup of bread crumbs, and half a can of condensed tomato soup. Add garlic powder and italian seasoning after mixing.</li>
+					<li>Preheat convection oven to 375 degrees Fahrenheit. When oven is hot, form turkey mixture into a loaf shape inside of a bread tin or other oven safe container. Pour remaining tomato soup over top of meatloaf.</li>
+					<li>Cook meatloaf for 1 hour or until the center is cooked. Remove from oven and let cool for 10 minutes.</li>
+					<li>Serve with mashed sweet potato or brown rice.</li>
+				</ol>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <!--End Recipe Section-->
+	  
+	  <!--Workout Section-->
+	  <div class="panel-group">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h4 class="panel-title">
+			  <a data-toggle="collapse" href="#collapse2">Workout</a>
+			</h4>
+		  </div>
+		  <div id="collapse2" class="panel-collapse collapse">
+			<ul class="list-group">
+			  <li class="list-group-item">
+				<!--Collapsible day Monday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#monday">Monday (Chest & Triceps)</a>
+						</h4>
+					  </div>
+					  <div id="monday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<table>
+								<tr>
+									<th>Exercise</th>
+									<th>Reps</th>
+									<th>Notes</th>
+								</tr>
+								<tr>
+									<td>Barbell Bench Press</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Incline dumbbell Bench Press</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Decline Barbell Bench Press</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Dumbbell Chest Flies</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure. Can be done on a chest fly machine</td>
+								</tr>
+								<tr>
+									<td>Triceps Pushdown</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Overhead triceps pushdown</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure. Can be done with dumbbells or machine</td>
+								</tr>
+							</table>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Tuesday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#tuesday">Tuesday (Cardio)</a>
+						</h4>
+					  </div>
+					  <div id="tuesday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<p>Cardio rest day. Do either 45 minutes on the bike (13 miles), 15-30 minute run (minimum 1.5 miles), or 30 min swim (600m-800m).</p>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Wednesday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#wednesday">Wednesday (Back & Biceps)</a>
+						</h4>
+					  </div>
+					  <div id="wednesday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<table>
+								<tr>
+									<th>Exercise</th>
+									<th>Reps</th>
+									<th>Notes</th>
+								</tr>
+								<tr>
+									<td>One Arm Dumbbell Row</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Wide-Grip Lat Pull-down</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Seated Cable Row</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure. Can be done on row machine</td>
+								</tr>
+								<tr>
+									<td>Barbell Bicep Curls</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure.</td>
+								</tr>
+								<tr>
+									<td>Dumbbell Bicep Curls</td>
+									<td>Three sets of 8-12 per arm</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Hammer Curls</td>
+									<td>Three sets of 8-12 per arm</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+							</table>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Thursday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#thursday">Thursday (Cardio)</a>
+						</h4>
+					  </div>
+					  <div id="thursday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<p>Cardio rest day. Do either 45 minutes on the bike (13 miles), 15-30 minute run (minimum 1.5 miles), or 30 min swim (600m-800m).</p>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Friday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#friday">Friday (Legs)</a>
+						</h4>
+					  </div>
+					  <div id="friday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<table>
+								<tr>
+									<th>Exercise</th>
+									<th>Reps</th>
+									<th>Notes</th>
+								</tr>
+								<tr>
+									<td>Squats</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure. Most important workout of the day <b>DO NOT SKIP</b></td>
+								</tr>
+								<tr>
+									<td>Leg Press</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Seated Leg Extensions</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Seated Leg Curls</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure.</td>
+								</tr>
+								<tr>
+									<td>Calf Raises</td>
+									<td>Three sets of 20-30</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Glute Machine</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+							</table>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Saturday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#saturday">Saturday (Rest Day)</a>
+						</h4>
+					  </div>
+					  <div id="saturday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<p>Take a break on this day. No workout is needed but recommended. Go on a hike, go dancing, go skiing. A good day to have fun while still getting a workout. </p>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			  <li class="list-group-item">
+				<!--Collapsible day Sunday -->
+				<div class="panel-group">
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+						<h4 class="panel-title">
+						  <a data-toggle="collapse" href="#sunday">Sunday (Shoulders)</a>
+						</h4>
+					  </div>
+					  <div id="sunday" class="panel-collapse collapse">
+						<ul class="list-group">
+						  <li class="list-group-item">
+							<table>
+								<tr>
+									<th>Exercise</th>
+									<th>Reps</th>
+									<th>Notes</th>
+								</tr>
+								<tr>
+									<td>Dumbbell Shoulder Press</td>
+									<td>Three sets of 6-10</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure. Can be substituted with barbell shoulder presses</td>
+								</tr>
+								<tr>
+									<td>Front Dumbbell Shoulder Raise</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Side Dumbbell Shoulder Raise</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Cable Crossovers</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure</td>
+								</tr>
+								<tr>
+									<td>Shrugs</td>
+									<td>Three sets of 8-12</td>
+									<td>After third rep, take 15 second rest then do a fourth set until failure.</td>
+								</tr>
+							</table>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <!--End Workout Section-->
+	  
+	  <!--Lifestyle Tips and Advice-->
+	  <div class="panel-group">
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h4 class="panel-title">
+			  <a data-toggle="collapse" href="#tips">Lifestyle Tips and Advice</a>
+			</h4>
+		  </div>
+		  <div id="tips" class="panel-collapse collapse">
+			<ul class="list-group">
+			  <li class="list-group-item">
+				<p>One major source of calories that people do not realize is drinks. Most beverages contain at least 100 calories, many with excess amounts of sugar. If you do want to drink things other than water, choose a diet soda or iced tea.</p>
+			  </li>
+			  <li class="list-group-item">
+				<p>Alcohol is another major source of calories and carbohydrates. But if you don't want to be a dab and still want to have a few drinks stick with either light beers and liquors mixed with club soda or diet soda.</p>
+			  </li>
+			  <li class="list-group-item">
+				<p>You can still have fun while trying to live a healthy lifestyle. The occasional cheat day won't kill you, but always consume things in moderation. Do not skip meals and starve yourself. This will cause your body to burn muscle for energy and not fat.</p>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <!--End Lifestyle section-->
+	  
+	</div>
+	<footer>
+		<p align="center" >Developed by Taylor Jones</p>
+	</footer>
+  </body>
+</html>
