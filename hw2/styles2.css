@@ -1,0 +1,53 @@
+body{
+	background: linear-gradient(270deg, #282466, #0d5d08);
+    background-size: 400% 400%;
+    position: relative;
+	-webkit-animation: AnimationName 10s ease infinite;
+	-moz-animation: AnimationName 10s ease infinite;
+	-o-animation: AnimationName 10s ease infinite;
+	animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.center_div{
+    position: relative;
+    top: 300px;
+    left: calc(50% - 250px);
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background: white;
+    transition: content 2s ease-out;
+}
+
+p{
+    position: relative;
+    top: calc(50% - 18px);
+    left: calc(50% - 250px);
+}
+
+.center_div:hover{
+    content: url(https://media.giphy.com/media/gPTTdOsD3lEQw/giphy.gif);
+    display: block;
+}
