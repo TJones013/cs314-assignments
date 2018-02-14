@@ -39,6 +39,16 @@ body{
     height: 300px;
     background: white;
     transition: content 2s ease-out;
+    border-radius: 30px;
+}
+
+.hidden_div{
+    position: absolute;
+    top:143px;
+    left: 1279px;
+    width: 50px;
+    height: 50px;
+    transition: width 0.5s ease-out;
 }
 
 p{
@@ -50,4 +60,20 @@ p{
 .center_div:hover{
     content: url(https://media.giphy.com/media/gPTTdOsD3lEQw/giphy.gif);
     display: block;
+}
+
+.hidden_div:hover{
+    width: 512px;
+    height: 288px;
+    content: url(https://media1.giphy.com/media/3o7TKHf8ziTDxzzVN6/giphy.gif);
+    display:block;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+}
+
+button:active{
+    content: attr(data-active);
 }

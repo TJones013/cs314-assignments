@@ -85,10 +85,17 @@ p {
 	font-size: 30px;
 	text-decoration: none;
 	transition: background-color 2s ease-out;
+	transition: width height 1s ease-out;
 }
 
 a:hover{
 	background-color: red;
+}
+
+a:active{
+	width: 200px;
+	height: 80px;
+	background-color: yellow;
 }
 
 .flex-container {
