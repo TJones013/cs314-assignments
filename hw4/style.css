@@ -84,7 +84,6 @@ header{
         text-align: center;
         height: 100%;
         font-size: 30px;
-        border:solid;
     }
 }
 
@@ -104,7 +103,6 @@ header{
         width: 33vw;
         height: 32vw;
         font-size: 30px;
-        border:solid;
         left: calc(50% - 16vw);
     }
 }
