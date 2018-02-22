@@ -1,0 +1,129 @@
+html,
+body{
+    height: 100%;
+    margin:0;
+    text-align: center;
+}
+
+header{
+    background: black;
+    height: 5vw;
+    color: white;
+}
+
+.header_div{
+    position: absolute;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.header_div > a{
+    position: relative;
+    top:40%;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+
+.header_div > img{
+    position: relative;
+    left: 80%;
+}
+
+.headline{
+    position: relative;  
+    background: darkgrey;
+}
+
+.headline_container{
+    position: relative;
+    top: 5%;
+    height:20vw;
+}
+
+.title{
+    font-size:2.5vw;
+    margin: 0;
+}
+
+.p1{
+    position: relative;
+    left: 12%;
+    width: 75%;
+    font-size: 1vw;
+}
+
+.enter_button{
+    border-radius: 6px;
+    background: lightgrey;
+    height: 2vw;
+    width: 8vw;
+    font-size: 1vw;
+    border-color: black;
+}
+
+.content_div{
+    position: relative;
+    height:25vw;
+    background: rgb(224, 210, 210);
+}
+
+@media screen and (min-width: 768px) {
+    .container_box{
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: #f1f1f1;
+    }
+
+    .container_box >  div{
+        position: relative;
+        background-color: #f1f1f1;
+        width: 33vw;
+        text-align: center;
+        height: 100%;
+        font-size: 30px;
+        border:solid;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container_box{
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: #f1f1f1;
+    }
+
+    .container_box >  div{
+        position: relative;
+        background-color: #f1f1f1;
+        text-align: center;
+        width: 33vw;
+        height: 32vw;
+        font-size: 30px;
+        border:solid;
+        left: calc(50% - 16vw);
+    }
+}
+
+.view_button{
+    border-radius: 6px;
+    background: lightgrey;
+    height: 2vw;
+    width: 8vw;
+    font-size: 1vw;
+    top: 80%;
+    padding: 0px;
+    border-color: black;
+}
+
+img{
+    height: 4vw;
+}
+
+.p2{
+    font-size: 1.5vw;
+}
