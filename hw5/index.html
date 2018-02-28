@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <header>
+        <p>IT Ticket Submission</p>
+    </header>
+    <form class="form">
+        <div class="content_div">
+            <div class="name_div">
+                Full Name<br>
+                <input type="text" name="full_name" placeholder="Enter Name Here">
+            </div>
+            <br>
+            <div class="id_div">
+                Employee ID<br>
+                <input type="number" name="employee_id" placeholder="Enter ID Here">
+            </div>
+            <br>
+            <div class="department_div">
+            Select Your Department<br>
+                <select placeholder="Department">
+                    <option value="" disabled selected>Select your department</option>
+                    <option value="IT">Information Technology</option>
+                    <option value="HR">Human Resources</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Legal">Legal</option>
+                    <option value="R&D">R&D</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <div class="radio_div">
+                Select what type issue you are experiencing<br>
+                    <input type="radio" name="issue" value="hardware"> Hardware<br>
+                    <input type="radio" name="issue" value="software"> Software<br>
+                    <input type="radio" name="issue" value="other"> Other/I Don't Know
+                </div>
+                <br>
+                <div class="text_div">
+                    Describe Your Issue (200 character max)<br>
+                    <textarea rows="4" cols="50" maxlength="200" placeholder="Describe your problem here"></textarea>
+                </div>
+            </div>
+            <br>
+            <button>Submit</button>
+            </div>
+    </form>
+  </body>
+</html>
