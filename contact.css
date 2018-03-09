@@ -1,3 +1,8 @@
+::placeholder{
+    color: lightblue;
+    font-size: 1vw;
+}
+
 #content{
     height: 100%;
 }
@@ -9,24 +14,60 @@ form{
     top: 7%;
     text-align: center;
     font-size: 1.5vw;
+    color: white;
 }
 
 form > input{
     position: relative;
     left: 31%;
     width: 40vw;
-    margin-bottom: 1%;
+    height: 3vh;
+    margin-bottom: 2%;
+    border-radius: 4px;
+    font-size: 1vw;
 }
 
 form > textarea{
     position: relative;
     left: 31%;
     width: 40vw;
+    height: 10vh;
     margin-bottom: 1%;
+    border-radius: 4px;
+    font-size: 1vw;
 }
 
 form > button{
-    width: 10vw;
+    width: 100px;
     position: relative;
-    left: 45%;
+    left: 47%;
+    font-size: 12px;
+    border-radius: 4px;
+    background: white
+}
+
+@media (max-width: 650px){
+    form{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 550px){
+    form > input{
+        width:50vw;
+    }
+
+    form > textarea{
+        width:50vw;
+    }
+}
+
+@media (max-width: 350px){
+    form > input{
+        width:60vw;
+    }
+
+    form > textarea{
+        width:60vw;
+    }
 }

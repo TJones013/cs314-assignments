@@ -56,3 +56,9 @@
         height: 70%;
     }
 }
+
+@media (max-width: 450px){
+    #content{
+        margin-bottom: 50px;
+    }
+}
