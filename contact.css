@@ -1,0 +1,32 @@
+#content{
+    height: 100%;
+}
+
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 7%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+form > input{
+    position: relative;
+    left: 31%;
+    width: 40vw;
+    margin-bottom: 1%;
+}
+
+form > textarea{
+    position: relative;
+    left: 31%;
+    width: 40vw;
+    margin-bottom: 1%;
+}
+
+form > button{
+    width: 10vw;
+    position: relative;
+    left: 45%;
+}

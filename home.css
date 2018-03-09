@@ -36,6 +36,7 @@ p{
 #part2{
     height:150%;
     position: relative;
+    margin-bottom: 20%;
 }
 
 #experience{
@@ -132,11 +133,17 @@ p{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 5%;
+    margin-bottom: 150px;
 }
 
 #gonzaga_div > img{
     height: 10em;
     width: 25%;
     border-radius: 20%;
+}
+
+@media (max-width: 450px){
+    #experience{
+        width: 100%;
+    }
 }
