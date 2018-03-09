@@ -1,0 +1,58 @@
+#content{
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10%;
+}
+
+#me{
+    position: relative;
+    top: 15%;
+    left: 5%;
+    width: 30%;
+    height: 65%;
+}
+
+#text{
+    color: white;
+    position: relative;
+    left: 10%;
+    width: 40%;
+}
+
+#text > h1{
+    font-size: 48px;
+}
+
+#text > p{
+    font-size: 30px;;
+    margin: 0;
+    letter-spacing: 0.03em;
+}
+
+@media (max-width: 650px){
+    #content{
+        flex-direction: column;
+    }
+
+    #text{
+        width: 80%;
+    }
+
+    #text > h1{
+        font-size: 28px;
+    }
+
+    #text > p{
+        font-size: 18px;
+    }
+
+    #me{
+        position: relative;
+        top: 15%;
+        left: 15%;
+        width: 50vw;
+        height: 70%;
+    }
+}

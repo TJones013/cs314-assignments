@@ -1,0 +1,142 @@
+html{
+    overflow-x: hidden;
+}
+
+p{
+    margin: 0;
+}
+
+#content{
+    position: relative;
+    height:100%;
+}
+
+#part1{
+    background-image: url("mountain.jpg");
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#part1 > p{
+    color: white;
+    font-size: 72px;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    position: relative;
+    padding-top: 10%; 
+}
+
+#part2{
+    height:150%;
+    position: relative;
+}
+
+#experience{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    top: 5%;
+    left: 20%;
+}
+
+#experience >p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    padding-left: 10%;
+    font-size: 48px;
+    margin-bottom: 5%;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#work_div{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#clorox_div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#clorox_div > img{
+    height: 10em;
+    width: 25%;
+    border-radius: 20%;
+
+}
+
+#clorox_text{
+    position: relative;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#clorox_text > h1{
+    flex-basis: 20%;
+    font-size: 24px;
+    margin-top: 0;
+    color: lightblue;
+}
+
+#clorox_text > h2{
+    flex-basis: 20%;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#clorox_text > h3{
+    flex-basis: 20%;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#aaa_div{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#aaa_div > img{
+    height: 10em;
+    width: 25%;
+    border-radius: 20%;
+}
+
+#gonzaga_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#gonzaga_div > img{
+    height: 10em;
+    width: 25%;
+    border-radius: 20%;
+}

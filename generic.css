@@ -1,0 +1,138 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    background:rgb(64, 64, 64);
+    height: 90%;
+}
+
+#header{
+    height:10%;
+}
+
+header{
+    background-color:#262626;
+    width:100%;
+    height:10%;
+    box-shadow: 0px 1px 50px #5E5E5E;
+    position:absolute;
+    top:0px;
+}
+
+header > p{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    color: white;
+    left: 44%;
+    top: 15%;
+    font-size: 48px;
+    padding-right: 20px;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+    top: 15%;
+    left: 1%;
+    cursor: pointer;
+    transition: opacity 1s;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#nav{
+    position: fixed;
+    top: 9%;
+    width: 100%;
+    height: 100%;
+    opacity:0.95;
+    background: white;
+}
+
+#nav_items{
+    position: relative;
+    top: 12vw;
+    left: 29vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 72px;
+    
+}
+
+#nav_items > a{
+    width: 40vw;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+}
+
+a{
+    text-decoration: none;
+    color: #262626;
+}
+
+footer{
+    background: #262626;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+}
+
+footer> i{
+    position: relative;
+    left: 1%;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+footer > i:hover{
+    opacity: 1;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    transition: opacity 0.5s;
+    border-radius: 10px;
+    position: relative;
+    left: 1%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
