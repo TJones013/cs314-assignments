@@ -1,116 +1,124 @@
 
 //Char Swap
-function charSwap(input){
+function charSwap(){
+    let input = prompt("Enter anything")
     let first = input.substr(0,1);
     let temp_message = input.substr(1,(input.length - 2)); 
     let last = input.substr((input.length - 1), input.length);
     let final_message = last + temp_message + first;
-    console.log(final_message);
+    alert(final_message);
 }
 
 //Char Swap Execute
 //charSwap("testing");
 
 //Hi String
-function hiString(input){
+function hiString(){
+    let input = prompt("Enter a string")
     let first = input.substr(0,2);
     if(first === "Hi"){
-        console.log(input);
+        alert(input);
     }
     else{
         message = "Hi" + input;
-        console.log(message);
+        alert(message);
     }
 }
 
 //Hi String Execute
-//hiString("Heya");
-//hiString("Hiya");
+//hiString();
 
 //Three Chars to Front
-function threeChars(input){
+function threeChars(){
+    let input = prompt("Enter a String greater than or equal 3")
     if(input.length < 3){
-        console.log("String insufficient length");
+        alert("String insufficient length");
     }
     else{
         let last = input.substr((input.length - 3),input.length);
         let new_str = last + input;
-        console.log(new_str);
+        alert(new_str);
     }
 }
 
 //Three Chars to Front Execute
-threeChars("Test123");
+//threeChars("Test123");
 
 //Strings to Sentance
-function toSentance(input){
+function toSentance(){
+    let input = prompt("Enter Strings seperated by commas")
     let message = input.split(",");
-    let alert_message = "Input from user:";
+    let alert_message = "Input from user: ";
     for(let i=0; i < message.length-1; i++){
         alert_message = alert_message + message[i] + ", ";
     }
     alert_message = alert_message + message[message.length-1];
-    console.log(alert_message);
+    alert(alert_message);
 }
 
 //Strings to Sentance Execute
-toSentance("to,many,cooks,on,the,dance,floor");
+//toSentance();
 
 //Upper or Lower
-function upper_lower(input){
+function upper_lower(){
+    let input = prompt("Enter a message")
     if(input.length < 3){
         let upper = input.toUpperCase();
-        console.log(upper);
+        alert(upper);
     }
     else{
         let first = input.substr(0,3);
         let rest = input.substr(3,input.length);
         first = first.toLowerCase();
         let final = first + rest;
-        console.log(final);
+        alert(final);
     }
 }
 
 //Upper or Lower Execute
-upper_lower("no");
-upper_lower("I'M NOT YELLING");
+//upper_lower();
 
 //Integer Swap
 function integerSwap(){
-    let numbers = arguments;
-    console.log(numbers);
+    let input = prompt("Enter list of numbers split by commas")
+    let numbers = input.split(",");
+    let temp = numbers[numbers.length-1];
+    numbers[numbers.length-1] = numbers[0];
+    numbers[0] = temp;
     let message = "Input values are "
     for(let i=0; i<numbers.length-1;i++){
         message = message + numbers[i] + ", ";
     }
     message = message + numbers[numbers.length-1];
-    console.log(message);
+    alert(message);
 }
 
 //Integer Swap Execute
-integerSwap(1,2,3,4,5);
+//integerSwap();
 
 //Longest String
 function longString(){
+    let my_arguments = prompt("Enter strings seperated by commas").split(",");
     let longest = "";
-    for(let i=0; i<arguments.length;i++){
-        if(arguments[i].length >= longest.length){
-            longest = arguments[i];
+    for(let i=0; i<my_arguments.length;i++){
+        if(my_arguments[i].length >= longest.length){
+            longest = my_arguments[i];
         }
     }
     alert(longest);
 }
 
 //Longest String Execute
-longString("Hello", "world", "test", "acknowledgment");
+//longString();
 
 //Largest Even Number
 function largeEven(){
+    let my_arguments = prompt("Enter numbers seperated by commas").split(",");
     let largest = 0;
-    for(let i=0; i<arguments.length;i++){
-        if(arguments[i] % 2 === 0){
-            if(arguments[i] >= largest){
-                largest = arguments[i];
+    for(let i=0; i<my_arguments.length;i++){
+        if(my_arguments[i] % 2 === 0){
+            if(my_arguments[i] >= largest){
+                largest = my_arguments[i];
             }
         }
     }
@@ -118,7 +126,7 @@ function largeEven(){
 }
 
 //Largest Even Number Execute
-largeEven(2,5,14,583,27,44);
+//largeEven();
 
 //Current Day Time
 function date(){
@@ -136,6 +144,9 @@ function date(){
     
     let hour = d.getHours();
     let minute = d.getMinutes();
+    if(minute < 10){
+        minute = "0" + minute;
+    }
     let day_phase = "";
     if(hour > 12){
         hour = hour - 12;
@@ -149,7 +160,7 @@ function date(){
 }
 
 //Current Date Time Execute
-date();
+//date();
 
 //Unlimited Function
 function unlimited(){
@@ -161,5 +172,5 @@ function unlimited(){
 }
 
 //Unlimited Function Execute
-unlimited("Hey", "Theyre", "Dilila", "Whats", "It", "Like","In", "NewYork","City");
-unlimited("Hello", "World", "!");
+//unlimited("Hey", "Theyre", "Dilila", "Whats", "It", "Like","In", "NewYork","City");
+//unlimited("Hello", "World", "!");
