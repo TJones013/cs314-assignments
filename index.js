@@ -5,8 +5,9 @@ $(document).ready(function(){
             '<p>' + 'Name: ' + item.name + '</p>' +
             '<p>' + 'Email: ' + item.email + '</p>'+
             '<p>' + 'Company: ' + item.company.name + '</p>'+
-            '<button id="button' + i + '">' + 'Click' + '</button>' +
+            '<button id="button' + i + '">' + 'Click test' + '</button>' +
             '</div>');
+            console.log(item.id);
         });
         $("#button").click(function(){
             console.log('test');
