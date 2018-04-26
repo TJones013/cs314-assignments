@@ -50,10 +50,10 @@ function buttonContent(user){
                 //console.log(flag);
                 $("#todo_" + user).append('<p>' + 'Todo: ' + item.title + '</p>');
                 if(item.completed){
-                    $("#todo_" + user).append('<i class="fas fa-check-square"></i>');
+                    $("#todo_" + user).append('<p>Completed:<i class="fas fa-check-square"></i></p>');
                 }
                 else{
-                    $("#todo_" + user).append('<i class="fas fa-times-circle"></i>');
+                    $("#todo_" + user).append('<p>Completed:<i class="fas fa-times-circle"></i></p>');
                 }
             }
             $("#todo_" + user).show();
