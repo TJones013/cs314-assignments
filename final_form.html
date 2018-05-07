@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="final_form.css">
+    <script src="final_form.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <form name="quiz_form">
+        <h1>Gonzaga Quiz</h1>
+        <p>What year was Gonzaga founded?</p>
+        <input id="q1" type="number" name="year" >
+        <p>Who is the current President of Gonzaga?</p>
+        <input id="q2" type="text" name="president">
+        <p>What is Gonzaga's mascot?</p>
+        <input id="q3" type="text" name="mascot">
+        <p>What year did Gonzaga Basketball reach the Championship</p>
+        <div id="q4">
+            <input type="radio" name="basketball" value="1998"> 1998<br>
+            <input type="radio" name="basketball" value="2007"> 2007<br>
+            <input type="radio" name="basketball" value="2017"> 2017
+        </div>
+        <br>
+        <button onclick="formCheck()">Submit</button>
+    </form>
+  </body>
+</html>
