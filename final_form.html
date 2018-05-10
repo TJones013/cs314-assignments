@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="final_form.css">
     <script src="final_form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href"overal.css">
     <title></title>
   </head>
+  <header id="header">
+    <h1>The site to rule all sites</h1>
+    <button>
+        <a href="index.html">Home</a>
+    </button>
+    <button>
+        <a href="final_form.html">Quiz</a>
+    </button>
+    <button>
+        <a href="final_map.html">Places to Go</a>
+    </button>
+    <button>
+        <a href="final_api.html">Team Lookup</a>
+    </button>
+  </header>
   <body>
-    <form name="quiz_form">
-        <h1>Gonzaga Quiz</h1>
-        <p>What year was Gonzaga founded?</p>
-        <input id="q1" type="number" name="year" >
-        <p>Who is the current President of Gonzaga?</p>
-        <input id="q2" type="text" name="president">
-        <p>What is Gonzaga's mascot?</p>
-        <input id="q3" type="text" name="mascot">
-        <p>What year did Gonzaga Basketball reach the Championship</p>
-        <div id="q4">
-            <input type="radio" name="basketball" value="1998"> 1998<br>
-            <input type="radio" name="basketball" value="2007"> 2007<br>
-            <input type="radio" name="basketball" value="2017"> 2017
+    <div id="main">
+        <div id="form_div">
+            <form name="quiz_form">
+                <h1>Gonzaga Quiz</h1>
+                <p>What year was Gonzaga founded?</p>
+                <input id="q1" type="number" name="year" >
+                <p>Who is the current President of Gonzaga?</p>
+                <input id="q2" type="text" name="president">
+                <p>What is Gonzaga's mascot?</p>
+                <input id="q3" type="text" name="mascot">
+                <p>What year did Gonzaga Basketball reach the Championship</p>
+                <div id="q4">
+                    <input type="radio" name="basketball" value="1998"> 1998<br>
+                    <input type="radio" name="basketball" value="2007"> 2007<br>
+                    <input type="radio" name="basketball" value="2017"> 2017
+                </div>
+                <br>
+                <button type="reset" onclick="formCheck()">Submit</button>
+            </form>
         </div>
-        <br>
-        <button onclick="formCheck()">Submit</button>
-    </form>
+        <div id="response">
+        </div>
+    </div>
   </body>
 </html>

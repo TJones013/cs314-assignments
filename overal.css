@@ -1,18 +1,9 @@
-html{
-    height: 100%;
-}
-
 #header{
     background: grey;
 }
 
 body{
-    height: 100%;
     background:darkgrey;
     text-align: center;
 }
 
-#map {
-    height: 70%;
-    width: 100%;
-}

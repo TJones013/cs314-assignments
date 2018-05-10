@@ -50,14 +50,16 @@ $(document).ready(function(){
                     '<p>Wins: ' + teams[i].wins + '</p>' +
                     '<p>Losses: ' + teams[i].losses + '</p>' +
                     '<p>Win rate: ' + (teams[i].wins / teams[i].losses).toFixed(2) + '</p>' + 
-                    '</div>'
+                    '</div>' +
+                    '<div id="picture_div">' + '</div>'
                 );
+                $("#picture_div").append('<p>Roster:</p>');
                 $.get("https://api.opendota.com/api/teams/" + teams[i].team_id + "/players").then(function(data){
                     data.map(function(y){
                         for(let j = 0; j < player_stuff.length; j++){
                             if(y.is_current_team_member){
                                 if(player_stuff[j].account_id == y.account_id){
-                                    $("#team_div").append(
+                                    $("#picture_div").append(
                                         '<div id="player_profile">' + 
                                         '<img src="' + player_stuff[j].avatarfull + '">' +
                                         '<br>' +

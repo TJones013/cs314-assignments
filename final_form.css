@@ -4,3 +4,12 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+#header{
+    background: grey;
+}
+
+body{
+    background:darkgrey;
+    text-align: center;
+}

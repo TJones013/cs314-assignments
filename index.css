@@ -1,0 +1,20 @@
+#workout_div{
+    display:none;
+}
+
+#food_div{
+    display: none;
+}
+
+#other_div{
+    display: none;
+}
+
+#header{
+    background: grey;
+}
+
+body{
+    background:darkgrey;
+    text-align: center;
+}
